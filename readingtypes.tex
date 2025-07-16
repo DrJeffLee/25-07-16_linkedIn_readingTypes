@@ -1,32 +1,138 @@
-\documentclass[border=10pt]{standalone}
-\usepackage{booktabs}
-\usepackage{array}
-\usepackage{adjustbox}
-\usepackage{graphicx}
-\usepackage{caption}
+\documentclass[8pt]{extarticle}
+
+\usepackage[paperwidth=7.2in, paperheight=9in, margin=0.25in,noheadfoot]{geometry}
+\pagestyle{empty} % No page numbers
+
 \usepackage{fontspec}
 \setmainfont{Liberation Sans}
 
-\begin{document}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{enumitem}
 
-\begin{adjustbox}{max width=\textwidth}
-\begin{tabular}{>{\bfseries}m{3.5cm} m{7.5cm} m{4cm}}
-\toprule
-Purpose of Reading & Extended Description of Use & Associated Tools \\
-\midrule
-Background Familiarization & Establish context and foundational knowledge before diving deeper into a subject area. Often done when entering a new domain or preparing for interdisciplinary collaboration. & Wikipedia, Textbooks, Introductory Reviews \\
-\addlinespace
-Literature Survey & Scan recent developments, common methodologies, and open questions. Supports framing research gaps and defining contributions. & Google Scholar, Scopus, Zotero, Connected Papers \\
-\addlinespace
-Deep Theoretical Absorption & Focused reading to understand theoretical frameworks, derive equations, or explore model implications. Often iterative and slow-paced. & LaTeX Notes, Annotated PDFs, Notion, Obsidian \\
-\addlinespace
-Methodological Benchmarking & Compare algorithms, techniques, or protocols across papers. Used for replication, validation, or selecting computational workflows. & Papers with Code, GitHub, Jupyter Notebooks \\
-\addlinespace
-Citation Scrutiny & Analyze referenced papers in detail to evaluate credibility or trace the intellectual lineage of an argument. & Reference Manager, Publisher APIs, DOI Lookup \\
-\addlinespace
-Meta-Analysis & Synthesize findings across studies for pattern identification or statistical consolidation. Common in systematic reviews. & Excel, R (meta package), Python (statsmodels, pandas) \\
-\bottomrule
-\end{tabular}
-\end{adjustbox}
+\usepackage{multicol}
+\setlength{\multicolsep}{3pt plus 1pt minus 0.75pt} % default is 12pt plus 4pt minus 3pt
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\centering
+
+{
+\Large\bfseries Types of Reading in Academic Research\par
+\vspace{0.5em}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{tabularx}{\linewidth}{>{\bfseries}p{1.5in} X p{1.75in}}
+    \toprule
+    Purpose                     &   Description &   Sources and Tools   \\
+    \midrule
+    Background Knowledge        &   \begin{minipage}[t]{\linewidth}
+                                    Breadth and brevity. \\
+                                    When you have no idea, or you're just curious. \\
+                                        \begin{minipage}[t]{2.75in}
+                                        \begin{multicols}{2}
+                                        \begin{itemize}[nosep]
+                                            \item New terminology
+                                            \item New concepts
+                                            \item New methods
+                                            \item New topics
+                                            \item New equations
+                                            \item General curiosities
+                                        \end{itemize}
+                                        \end{multicols}
+                                        \end{minipage} \vspace{0.5em} \\
+                                    Ask some questions but keep the momentum going.
+                                    \end{minipage}
+                                
+                                                &   \begin{minipage}[t]{\linewidth}
+                                                    \begin{itemize}[nosep,leftmargin=*]
+                                                        \item AI chatbot (e.g. Copilot)
+                                                        \item YouTube
+                                                        \item Wikipedia
+                                                    \end{itemize}
+                                                    \end{minipage}
+                                                            \\
+    \addlinespace
+    Theoretical Understanding   &   \begin{minipage}[t]{\linewidth}
+                                    Slow and steady. \\
+                                    Building a coherent conceptual and mathematical framework. \\
+                                    Better hypotheses, better experiments, better interpretations.\vspace{0.5em}
+                                    \begin{itemize}[nosep]
+                                        \item Derivations, assumptions, limitations
+                                        \item "Canonical" problems and results
+                                        \item Unsolved problems and unexplained results
+                                        \item Historical context and major breakthroughs
+                                    \end{itemize} \vspace{0.5em}
+                                    Ask questions and take time to reflect. \\
+                                    Expect to revisit topics often and be patient with yourself. \\
+                                    Derive equations, test methods, study results.
+                                    \end{minipage}
+                                    
+                                                &   \begin{minipage}[t]{\linewidth}
+                                                    \begin{itemize}[nosep,leftmargin=*]
+                                                        \item Textbooks
+                                                        \item YouTube
+                                                        \item Wikipedia
+                                                        \item Review paper abstracts
+                                                        \item Review paper introductions
+                                                    \end{itemize}
+                                                    \vspace{0.5em}
+                                                    \begin{itemize}[nosep,leftmargin=*]
+                                                        \item Library
+                                                        \item Citation Index (e.g. SCOPUS)
+                                                    \end{itemize}
+                                                    \end{minipage}
+                                                            \\
+    \addlinespace
+    Surveying Research          &   \begin{minipage}[t]{\linewidth}
+                                    Help to identify novelty and maximize impact.
+                                    \begin{itemize}[nosep]
+                                        \item Recent progress and near-term objectives
+                                        \item Current research foci and ongoing challenges
+                                        \item Prominent researchers and groups
+                                        \item Common methodologies
+                                        \item Research gaps
+                                        \item Competing results, methods, and theories
+                                    \end{itemize}
+                                    \end{minipage}
+
+                                                &   \begin{minipage}[t]{\linewidth}
+                                                    \begin{itemize}[nosep,leftmargin=*]
+                                                        \item Research roadmaps
+                                                        \item Review papers
+                                                        \item Seminal research papers
+                                                        \item Research paper abstracts
+                                                        \item Research paper introductions
+                                                    \end{itemize}
+                                                    \end{minipage}
+                                                            \\
+    \addlinespace
+    Critical literature review  &   \begin{minipage}[t]{\linewidth}
+                                    \begin{itemize}[nosep]
+                                        \item Scrutinize citations
+                                        \item Critique experiments, methods, results and interpretations
+                                        \item Methodological Benchmarking \& Compare algorithms, techniques, or protocols across papers. Used for replication, validation, or selecting computational workflows. \& Papers with Code, GitHub, Jupyter Notebooks
+                                        \item Meta-Analysis \& Synthesize findings across studies for pattern identification or statistical consolidation. Common in systematic reviews. \& Excel, R (meta package), Python (statsmodels, pandas)
+                                    \end{itemize}
+                                    \end{minipage}
+
+                                                &   \begin{minipage}[t]{\linewidth}
+                                                    \begin{itemize}[nosep,leftmargin=*]
+                                                        \item Research papers
+                                                    \end{itemize}
+                                                    \end{minipage}
+                                                            \\
+    % \addlinespace
+    % \addlinespae
+    
+    % \bottomrule
+
+    % \item Notion
+    % \item Obsidian
+    % \item Connected Papers
+\end{tabularx}
 
 \end{document}

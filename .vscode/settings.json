@@ -1,0 +1,19 @@
+{
+"latex-workshop.latex.tools": [
+  {
+    "name": "custom-script",
+    "command": "bash",
+    "args": ["compile.sh"],
+    "env": {}
+  }
+],
+
+"latex-workshop.latex.recipes": [
+  {
+    "name": "Run custom compile script",
+    "tools": ["custom-script"]
+  }
+],
+
+"latex-workshop.latex.autoBuild.run": "never"
+}
