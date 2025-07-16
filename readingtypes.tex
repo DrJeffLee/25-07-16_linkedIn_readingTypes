@@ -13,7 +13,7 @@
 \usepackage{multicol}
 \setlength{\multicolsep}{3pt plus 1pt minus 0.75pt} % default is 12pt plus 4pt minus 3pt
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document}
 \centering
@@ -23,11 +23,11 @@
 \vspace{0.5em}
 }
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{tabularx}{\linewidth}{>{\bfseries}p{1.5in} X p{1.75in}}
     \toprule
-    Purpose                     &   Description &   Sources and Tools   \\
+    \textbf{Purpose}            &   \textbf{Description}    &   \textbf{Sources and Tools}  \\
     \midrule
     Background Knowledge        &   \begin{minipage}[t]{\linewidth}
                                     Breadth and brevity. \\
@@ -47,20 +47,21 @@
                                     Ask some questions but keep the momentum going.
                                     \end{minipage}
                                 
-                                                &   \begin{minipage}[t]{\linewidth}
-                                                    \begin{itemize}[nosep,leftmargin=*]
-                                                        \item AI chatbot (e.g. Copilot)
-                                                        \item YouTube
-                                                        \item Wikipedia
-                                                    \end{itemize}
-                                                    \end{minipage}
-                                                            \\
+                                                            &   \begin{minipage}[t]{\linewidth}
+                                                                \begin{itemize}[nosep,leftmargin=*]
+                                                                    \item AI chatbot (e.g. Copilot)
+                                                                    \item YouTube
+                                                                    \item Wikipedia
+                                                                \end{itemize}
+                                                                \end{minipage}
+                                                                        \\
     \addlinespace
     Theoretical Understanding   &   \begin{minipage}[t]{\linewidth}
                                     Slow and steady. \\
-                                    Building a coherent conceptual and mathematical framework. \\
-                                    Better hypotheses, better experiments, better interpretations.\vspace{0.5em}
+                                    When you need a foundation that enables better
+                                    hypotheses, better experiments, and better interpretations.\vspace{0.5em}
                                     \begin{itemize}[nosep]
+                                        \item Conceptual and mathematical frameworks
                                         \item Derivations, assumptions, limitations
                                         \item "Canonical" problems and results
                                         \item Unsolved problems and unexplained results
@@ -71,24 +72,26 @@
                                     Derive equations, test methods, study results.
                                     \end{minipage}
                                     
-                                                &   \begin{minipage}[t]{\linewidth}
-                                                    \begin{itemize}[nosep,leftmargin=*]
-                                                        \item Textbooks
-                                                        \item YouTube
-                                                        \item Wikipedia
-                                                        \item Review paper abstracts
-                                                        \item Review paper introductions
-                                                    \end{itemize}
-                                                    \vspace{0.5em}
-                                                    \begin{itemize}[nosep,leftmargin=*]
-                                                        \item Library
-                                                        \item Citation Index (e.g. SCOPUS)
-                                                    \end{itemize}
-                                                    \end{minipage}
-                                                            \\
+                                                            &   \begin{minipage}[t]{\linewidth}
+                                                                \begin{itemize}[nosep,leftmargin=*]
+                                                                    \item Textbooks
+                                                                    \item YouTube
+                                                                    \item Wikipedia
+                                                                    \item Review paper abstracts
+                                                                    \item Review paper introductions
+                                                                    \item "Seminal" research papers
+                                                                \end{itemize}
+                                                                \vspace{1em}
+                                                                \begin{itemize}[nosep,leftmargin=*]
+                                                                    \item Library
+                                                                    \item Citation Index (e.g. SCOPUS)
+                                                                \end{itemize}
+                                                                \end{minipage}
+                                                                        \\
     \addlinespace
     Surveying Research          &   \begin{minipage}[t]{\linewidth}
-                                    Help to identify novelty and maximize impact.
+                                    Narrower scope but less depth than theory. \\
+                                    When you need help to identify novelty and maximize impact.
                                     \begin{itemize}[nosep]
                                         \item Recent progress and near-term objectives
                                         \item Current research foci and ongoing challenges
@@ -97,50 +100,71 @@
                                         \item Research gaps
                                         \item Competing results, methods, and theories
                                     \end{itemize}
+                                    You do not need to read every part of every paper. \\
+                                    Learn when to slow down and when to keep moving. \\
+                                    Stay focussed on the bigger picture. \\
                                     \end{minipage}
 
-                                                &   \begin{minipage}[t]{\linewidth}
-                                                    \begin{itemize}[nosep,leftmargin=*]
-                                                        \item Research roadmaps
-                                                        \item Review papers
-                                                        \item Seminal research papers
-                                                        \item Research paper abstracts
-                                                        \item Research paper introductions
-                                                    \end{itemize}
-                                                    \end{minipage}
-                                                            \\
+                                                            &   \begin{minipage}[t]{\linewidth}
+                                                                \begin{itemize}[nosep,leftmargin=*]
+                                                                    \item Research roadmaps
+                                                                    \item Review papers
+                                                                    \item Research paper abstracts
+                                                                    \item Research paper introductions
+                                                                \end{itemize}
+                                                                \vspace{1em}
+                                                                \begin{itemize}[nosep,leftmargin=*]
+                                                                    \item Organization website (e.g. Funding Body)
+                                                                    \item Citation Index (e.g. SCOPUS)
+                                                                \end{itemize}
+                                                                \end{minipage}
+                                                                        \\
     \addlinespace
     Critical literature Review  &   \begin{minipage}[t]{\linewidth}
+                                    Time to be nit-picky and discerning.
+                                    When you need to dig deep into a niche topic or method.
                                     \begin{itemize}[nosep]
                                         \item Scrutinize citations
-                                        \item Critique experiments, methods, results and interpretations
-                                        \item Methodological Benchmarking \& Compare algorithms, techniques, or protocols across papers. Used for replication, validation, or selecting computational workflows. \& Papers with Code, GitHub, Jupyter Notebooks
-                                        \item Meta-Analysis \& Synthesize findings across studies for pattern identification or statistical consolidation. Common in systematic reviews. \& Excel, R (meta package), Python (statsmodels, pandas)
+                                        \item Evaluate experiments, methods, results and interpretations
+                                        \item Compare results across papers
                                     \end{itemize}
+                                    Expect to do some hard, tedious work. \\
+                                    Take lots of organized searchable (digital) notes
                                     \end{minipage}
 
-                                                &   \begin{minipage}[t]{\linewidth}
-                                                    \begin{itemize}[nosep,leftmargin=*]
-                                                        \item Research papers
-                                                        \item Connected Papers
-                                                        \item LitMaps
-                                                    \end{itemize}
-                                                    \end{minipage}
-                                                            \\
+                                                            &   \begin{minipage}[t]{\linewidth}
+                                                                \begin{itemize}[nosep,leftmargin=*]
+                                                                    \item Research papers
+                                                                \end{itemize}
+                                                                \vspace{1em}
+                                                                \begin{itemize}[nosep,leftmargin=*]
+                                                                    \item Review paper bibliographies
+                                                                    \item Citation mapping tools (e.g Litmaps)
+                                                                \end{itemize}
+                                                                \end{minipage}
+                                                                        \\
     \addlinespace
     Reference Hunting           &   \begin{minipage}[t]{\linewidth}
+                                    Lots of paper hopping.
                                     When you have a very specific question or are looking for a specific piece of data or information.
                                     \begin{itemize}[nosep]
-                                        \item test
+                                        \item Find a trustworthy reference to back up oft-repeated claims
+                                        \item Quantify vague qualitative statements.
+                                        \item Give proper attribution
                                     \end{itemize}
+                                    You've got a deadline soon, don't you? \\
+                                    Block out the noise, laser focus only. \\
+                                    Chase primary sources. \\
+                                    It's an old inaccessible paper from the 60s isn't it? \\
+                                    Definitely don't get distracted making a LinkedIn post about academic reading styles!
                                     \end{minipage}
 
-                                                &   \begin{minipage}[t]{\linewidth}
-                                                    \begin{itemize}[nosep,leftmargin=*]
-                                                        \item Research papers
-                                                    \end{itemize}
-                                                    \end{minipage}
-                                                            \\
+                                                            &   \begin{minipage}[t]{\linewidth}
+                                                                \begin{itemize}[nosep,leftmargin=*]
+                                                                    \item Research papers
+                                                                \end{itemize}
+                                                                \end{minipage}
+                                                                        \\
     
     \bottomrule
 \end{tabularx}

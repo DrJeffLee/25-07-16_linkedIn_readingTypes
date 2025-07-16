@@ -10,7 +10,7 @@ xelatex $FILENAME.tex
 
 # Convert the PDF to PNG using ImageMagick
 convert -density 300 $FILENAME.pdf \
-        -resize 1200x627^ -gravity center -extent 1200x627 \
+        -resize 1080x1350^ -gravity center -extent 1080x1350 \
         -background white -alpha remove -quality 100 \
         $FILENAME.png
 
