@@ -1,0 +1,1 @@
+![image](/readingtypes.png)
