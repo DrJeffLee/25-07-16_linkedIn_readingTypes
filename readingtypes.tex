@@ -13,6 +13,8 @@
 \usepackage{multicol}
 \setlength{\multicolsep}{3pt plus 1pt minus 0.75pt} % default is 12pt plus 4pt minus 3pt
 
+\usepackage{fontawesome}
+
 \usepackage[most]{tcolorbox}
 \tcbset{
   boxsep=1pt,       % padding inside the box
@@ -28,11 +30,10 @@
   before skip=2pt,  % vertical space before box
   after skip=2pt    % vertical space after box
 }
-\newtcolorbox{whatBox}{title=What is it?,     colframe=blue!75!black,   colback=blue!10}
-\newtcolorbox{whenBox}{title=What is it for?, colframe=orange!75!black, colback=orange!10}
-\newtcolorbox{tipsBox}{title=Tips,            colframe=teal!75!black,   colback=teal!10}
-\newtcolorbox{sourcesBox}{title=Sources,      colframe=purple!75!black, colback=purple!10}
-\newtcolorbox{toolsBox}{title=Tools,          colframe=green!60!black,  colback=green!10}
+\newtcolorbox{whatBox}{title={\faInfoCircle \quad What is it?},   colframe=blue!75!black,   colback=blue!10}
+\newtcolorbox{whenBox}{title={\faBullseye \quad What is it for?}, colframe=orange!75!black, colback=orange!10}
+\newtcolorbox{tipsBox}{title={\faLightbulbO \quad Tips},          colframe=teal!75!black,   colback=teal!10}
+\newtcolorbox{sourcesBox}{title={\faBook \quad Sources},          colframe=purple!75!black, colback=purple!10}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -40,7 +41,7 @@
 \centering
 
 {
-\Large\bfseries Types of Reading in Academic Research\par
+    \Large\bfseries Types of Reading in Academic Research
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -302,5 +303,11 @@
 
                             \\
 \end{tabularx}
+
+\vspace{-1em}
+
+\begin{flushright}
+  \scriptsize Jeffrey Lee Johnston \textbar{} v1.0 \textbar{} 17 July 2025
+\end{flushright}
 
 \end{document}
